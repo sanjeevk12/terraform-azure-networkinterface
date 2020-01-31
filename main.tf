@@ -7,7 +7,7 @@ resource "azurerm_network_interface" "nic" {
     name                          = "${var.nic_ip_config}"
     subnet_id                     = "${data.azurerm_subnet.sub.id}"
     private_ip_address_allocation = "${var.private_ip_address_allocation_type}"
-    private_ip_address            = "${var.private_ip_address}"
+    
   }
 
   tags = "${var.tags}"
