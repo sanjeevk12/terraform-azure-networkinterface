@@ -33,3 +33,7 @@ variable "private_ip_address" {
 variable "private_ip_address_allocation_type" {
   description = "Private Ip address allocation type(options are dynamic or static)."
 }
+
+variable tags {
+  type = "map"
+  }
